@@ -1,354 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EMBER — Burgers · Bar · Good Times</title>
-  <meta name="description" content="EMBER is a modern burger & cocktail bar. Smash burgers, craft drinks, late-night vibes." />
-  <meta property="og:title" content="EMBER — Burgers · Bar · Good Times" />
-  <meta property="og:description" content="Modern burger & cocktail bar. Smash burgers, craft drinks, late-night vibes." />
-  <meta property="og:type" content="website" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="index.js"></script>
-</head>
-<body>
-  <header class="site-header" id="top">
-    <div class="container header-inner">
-      <a href="#top" class="brand" aria-label="EMBER Home">
-        <span class="brand-mark" aria-hidden="true">🔥</span>
-        <span class="brand-text">EMBER</span>
-      </a>
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>EMBER — Burgers · Bar · Good Times</title>
+      <meta name="description" content="EMBER is a modern burger & cocktail bar. Smash burgers, craft drinks, late-night vibes." />
+      <meta property="og:title" content="EMBER — Burgers · Bar · Good Times" />
+      <meta property="og:description" content="Modern burger & cocktail bar. Smash burgers, craft drinks, late-night vibes." />
+      <meta property="og:type" content="website" />
+      <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍔</text></svg>">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css" />
+      <script defer src="index.js"></script>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="brand" aria-label="EMBER Home">
+          <span class="brand-mark" aria-hidden="true">🔥</span>
+          <span class="brand-text">EMBER</span>
+        </a>
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
-        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-      </button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle menu">
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
 
-      <nav id="site-nav" class="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#drinks">Drinks</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#book">Book</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li class="status-pill" aria-live="polite"><span id="openStatus">Checking…</span></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#drinks">Drinks</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#book">Book</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="status-pill" aria-live="polite"><span id="openStatus">Checking…</span></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <picture>
-        <!-- mobile-first -->
-        <img src="./public/hamburguer-back1.jpg"
-             alt="Close-up of a juicy burger" loading="eager">
-      </picture>
-      <div class="hero-overlay"></div>
-      <div class="container hero-content">
-        <h1><span class="accent">Burgers</span> & <span class="accent">Cocktails</span> done right.</h1>
-        <p>Smash burgers, craft drinks, and late-night bar vibes. Kitchen ‘til midnight.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#book">Reserve a table</a>
-          <a class="btn btn-ghost" href="#menu">See the menu</a>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <picture>
+          <!-- mobile-first -->
+          <img src="./public/hamburguer-back1.jpg"
+              alt="Close-up of a juicy burger" loading="eager">
+        </picture>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <h1><span class="accent">Burgers</span> & <span class="accent">Cocktails</span> done right.</h1>
+          <p>Smash burgers, craft drinks, and late-night bar vibes. Kitchen ‘til midnight.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#book">Reserve a table</a>
+            <a class="btn btn-ghost" href="#menu">See the menu</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- MENU -->
-    <section id="menu" class="section">
-      <div class="container">
-        <header class="section-head">
-          <h2>Food Menu</h2>
-          <p>Griddle-smashed patties, loaded sides, and veggie favorites.</p>
-        </header>
+      <!-- MENU -->
+      <section id="menu" class="section">
+        <div class="container">
+          <header class="section-head">
+            <h2>Food Menu</h2>
+            <p>Griddle-smashed patties, loaded sides, and veggie favorites.</p>
+          </header>
 
-        <div class="filters" role="tablist" aria-label="Food categories">
-          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
-          <button class="chip" data-filter="burgers" role="tab" aria-selected="false">Burgers</button>
-          <button class="chip" data-filter="sides" role="tab" aria-selected="false">Sides</button>
-          <button class="chip" data-filter="veggie" role="tab" aria-selected="false">Veggie</button>
-        </div>
-
-        <ul class="menu-grid" id="foodGrid">
-          <!-- Each item: data-category for filtering -->
-          <li class="menu-card" data-category="burgers">
-            <div class="menu-card__head">
-              <h3>Ember Smash</h3><span class="price">€11</span>
-            </div>
-            <p>Double smashed beef, American cheese, ember sauce, pickles, onion, sesame bun.</p>
-            <span class="tag">Signature</span>
-          </li>
-
-          <li class="menu-card" data-category="burgers">
-            <div class="menu-card__head">
-              <h3>Hot Honey Chick</h3><span class="price">€12</span>
-            </div>
-            <p>Crispy chicken, hot honey glaze, slaw, pickles, brioche bun.</p>
-            <span class="tag">Spicy</span>
-          </li>
-
-          <li class="menu-card" data-category="veggie">
-            <div class="menu-card__head">
-              <h3>Smoky Shroom Melt</h3><span class="price">€10</span>
-            </div>
-            <p>Grilled portobello, smoked provolone, caramelized onions, garlic aioli.</p>
-            <span class="tag">Veg</span>
-          </li>
-
-          <li class="menu-card" data-category="sides">
-            <div class="menu-card__head">
-              <h3>Truffle Parm Fries</h3><span class="price">€6</span>
-            </div>
-            <p>Shoestring fries, truffle oil, parmesan, parsley.</p>
-          </li>
-
-          <li class="menu-card" data-category="sides">
-            <div class="menu-card__head">
-              <h3>Buffalo Cauli Bites</h3><span class="price">€7</span>
-            </div>
-            <p>Crispy cauliflower, buffalo sauce, ranch dip.</p>
-          </li>
-
-          <li class="menu-card" data-category="veggie">
-            <div class="menu-card__head">
-              <h3>Falafel Stack</h3><span class="price">€9</span>
-            </div>
-            <p>Herbed falafel, tahini slaw, tomato, pickled red onion.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- DRINKS -->
-    <section id="drinks" class="section section-alt">
-      <div class="container">
-        <header class="section-head">
-          <h2>Drinks</h2>
-          <p>Craft cocktails and local taps to match your mood.</p>
-        </header>
-
-        <div class="filters" role="tablist" aria-label="Drink categories">
-          <button class="chip is-active" data-filter="all" data-target="drinkGrid" role="tab" aria-selected="true">All</button>
-          <button class="chip" data-filter="cocktails" data-target="drinkGrid" role="tab" aria-selected="false">Cocktails</button>
-          <button class="chip" data-filter="beer" data-target="drinkGrid" role="tab" aria-selected="false">Beer</button>
-          <button class="chip" data-filter="noalcohol" data-target="drinkGrid" role="tab" aria-selected="false">Zero-Proof</button>
-        </div>
-
-        <ul class="menu-grid" id="drinkGrid">
-          <li class="menu-card" data-category="cocktails">
-            <div class="menu-card__head">
-              <h3>Smoked Old Fashioned</h3><span class="price">€10</span>
-            </div>
-            <p>Bourbon, demerara, bitters, orange — smoke finish.</p>
-            <span class="tag">Classic</span>
-          </li>
-
-          <li class="menu-card" data-category="cocktails">
-            <div class="menu-card__head">
-              <h3>Neon Paloma</h3><span class="price">€9</span>
-            </div>
-            <p>Tequila, grapefruit, lime, soda, pinch of salt.</p>
-            <span class="tag">Fresh</span>
-          </li>
-
-          <li class="menu-card" data-category="beer">
-            <div class="menu-card__head">
-              <h3>Local IPA (Tap)</h3><span class="price">€6</span>
-            </div>
-            <p>Rotating selection from local breweries.</p>
-          </li>
-
-          <li class="menu-card" data-category="noalcohol">
-            <div class="menu-card__head">
-              <h3>Charcoal Lemonade</h3><span class="price">€6</span>
-            </div>
-            <p>Lemon, agave, activated charcoal, soda.</p>
-            <span class="tag">Zero-Proof</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- SPECIALS / SCROLLER -->
-    <section class="section specials">
-      <div class="container">
-        <header class="section-head">
-          <h2>Tonight’s Specials</h2>
-          <p>Limited run plates & bartender’s picks.</p>
-        </header>
-
-        <div class="cards-scroll" tabindex="0" aria-label="Specials carousel">
-          <article class="special-card">
-            <img src="https://images.unsplash.com/photo-1606756790138-261d4d2b69f1?q=80&w=1600&auto=format&fit=crop" alt="BBQ burger special" loading="lazy">
-            <div class="special-card__body">
-              <h3>BBQ Burnt-Ends Smash</h3>
-              <p>Double patty, house BBQ, crispy onions.</p>
-              <span class="price">€13</span>
-            </div>
-          </article>
-
-          <article class="special-card">
-            <img src="https://images.unsplash.com/photo-1541976076758-347942db1970?q=80&w=1600&auto=format&fit=crop" alt="Cocktail special" loading="lazy">
-            <div class="special-card__body">
-              <h3>Black Cherry Sour</h3>
-              <p>Whiskey, cherry, foam — weekend only.</p>
-              <span class="price">€9</span>
-            </div>
-          </article>
-
-          <article class="special-card">
-            <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=1600&auto=format&fit=crop" alt="Loaded fries special" loading="lazy">
-            <div class="special-card__body">
-              <h3>Korean Loaded Fries</h3>
-              <p>Gochujang mayo, scallions, sesame.</p>
-              <span class="price">€7</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- EVENTS -->
-    <section id="events" class="section section-alt">
-      <div class="container">
-        <header class="section-head">
-          <h2>Events</h2>
-          <p>Live DJs every Friday. Quiz Night on Wednesdays.</p>
-        </header>
-
-        <ul class="events-grid">
-          <li class="event">
-            <time datetime="2025-08-15">Aug 15, 2025</time>
-            <h3>Summer DJ — House & Funk</h3>
-            <p>Beats from 21:00. 2-for-1 Palomas 20:00–21:00.</p>
-          </li>
-          <li class="event">
-            <time datetime="2025-08-20">Aug 20, 2025</time>
-            <h3>Quiz Night</h3>
-            <p>Teams up to 5. Starts 20:30. Prizes for top 3.</p>
-          </li>
-          <li class="event">
-            <time datetime="2025-08-24">Aug 24, 2025</time>
-            <h3>Wing Sunday</h3>
-            <p>€0.80 wings all day with any drink.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- BOOKING -->
-    <section id="book" class="section">
-      <div class="container book-wrap">
-        <header class="section-head">
-          <h2>Book a Table</h2>
-          <p>We hold tables for 15 minutes. For groups of 8+, call us.</p>
-        </header>
-
-        <form id="bookingForm" class="booking-form" novalidate>
-          <div class="form-row">
-            <label for="date">Date</label>
-            <input type="date" id="date" required>
+          <div class="filters" role="tablist" aria-label="Food categories">
+            <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="chip" data-filter="burgers" role="tab" aria-selected="false">Burgers</button>
+            <button class="chip" data-filter="sides" role="tab" aria-selected="false">Sides</button>
+            <button class="chip" data-filter="veggie" role="tab" aria-selected="false">Veggie</button>
           </div>
-          <div class="form-row">
-            <label for="time">Time</label>
-            <input type="time" id="time" required>
-          </div>
-          <div class="form-row">
-            <label for="party">Party size</label>
-            <input type="number" id="party" min="1" max="20" value="2" required>
-          </div>
-          <div class="form-row">
-            <label for="name">Full name</label>
-            <input type="text" id="name" placeholder="Your name" required>
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="you@email.com" required>
-          </div>
-          <div class="form-row">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" placeholder="+39 333 123 4567" required>
-          </div>
-          <div class="form-row">
-            <label for="notes">Notes (optional)</label>
-            <textarea id="notes" rows="3" placeholder="Allergies, occasion, etc."></textarea>
-          </div>
-          <div class="form-actions">
-            <button class="btn btn-primary" type="submit">Confirm reservation</button>
-            <p class="small">You’ll see on-screen confirmation and an email draft.</p>
-          </div>
-        </form>
 
-        <!-- Modal -->
-        <dialog id="confirmModal" class="modal">
-          <form method="dialog" class="modal-card">
-            <h3>Reservation Confirmed (Local)</h3>
-            <p id="confirmText">Thanks! We’ve saved your booking in this browser.</p>
-            <menu>
-              <button class="btn" value="cancel">Close</button>
-            </menu>
-          </form>
-        </dialog>
-      </div>
-    </section>
+          <ul class="menu-grid" id="foodGrid">
+            <!-- Each item: data-category for filtering -->
+            <li class="menu-card" data-category="burgers">
+              <div class="menu-card__head">
+                <h3>Ember Smash</h3><span class="price">€11</span>
+              </div>
+              <p>Double smashed beef, American cheese, ember sauce, pickles, onion, sesame bun.</p>
+              <span class="tag">Signature</span>
+            </li>
 
-    <!-- GALLERY -->
-    <section class="section section-alt">
-      <div class="container">
-        <header class="section-head">
-          <h2>Gallery</h2>
-          <p>Vibes from the bar & kitchen.</p>
-        </header>
-        <div class="gallery">
-          <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1600&auto=format&fit=crop" alt="Bar counter with lights" loading="lazy">
-          <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=1600&auto=format&fit=crop" alt="Cocktail being poured" loading="lazy">
-          <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=1600&auto=format&fit=crop" alt="Burger stack" loading="lazy">
-          <img src="https://images.unsplash.com/photo-1550639525-c97d455acf70?q=80&w=1600&auto=format&fit=crop" alt="Friends toasting" loading="lazy">
-          <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1600&auto=format&fit=crop" alt="Beer taps" loading="lazy">
-          <img src="https://images.unsplash.com/photo-1543775305-c60d67e1bf4e?q=80&w=1600&auto=format&fit=crop" alt="Fries and dips" loading="lazy">
-        </div>
-      </div>
-    </section>
+            <li class="menu-card" data-category="burgers">
+              <div class="menu-card__head">
+                <h3>Hot Honey Chick</h3><span class="price">€12</span>
+              </div>
+              <p>Crispy chicken, hot honey glaze, slaw, pickles, brioche bun.</p>
+              <span class="tag">Spicy</span>
+            </li>
 
-    <!-- CONTACT / FOOTER -->
-    <section id="contact" class="section">
-      <div class="container contact-wrap">
-        <div>
-          <h2>Contact</h2>
-          <p class="lead">123 Ember St, Your City</p>
-          <ul class="contact-list">
-            <li><strong>Phone:</strong> <a href="tel:+39123456789">+39 123 456 789</a></li>
-            <li><strong>Email:</strong> <a href="mailto:hello@ember.bar">hello@ember.bar</a></li>
-            <li><strong>Hours:</strong> <span id="hoursText">Mon–Thu 12:00–00:00 · Fri–Sat 12:00–02:00 · Sun 12:00–23:00</span></li>
+            <li class="menu-card" data-category="veggie">
+              <div class="menu-card__head">
+                <h3>Smoky Shroom Melt</h3><span class="price">€10</span>
+              </div>
+              <p>Grilled portobello, smoked provolone, caramelized onions, garlic aioli.</p>
+              <span class="tag">Veg</span>
+            </li>
+
+            <li class="menu-card" data-category="sides">
+              <div class="menu-card__head">
+                <h3>Truffle Parm Fries</h3><span class="price">€6</span>
+              </div>
+              <p>Shoestring fries, truffle oil, parmesan, parsley.</p>
+            </li>
+
+            <li class="menu-card" data-category="sides">
+              <div class="menu-card__head">
+                <h3>Buffalo Cauli Bites</h3><span class="price">€7</span>
+              </div>
+              <p>Crispy cauliflower, buffalo sauce, ranch dip.</p>
+            </li>
+
+            <li class="menu-card" data-category="veggie">
+              <div class="menu-card__head">
+                <h3>Falafel Stack</h3><span class="price">€9</span>
+              </div>
+              <p>Herbed falafel, tahini slaw, tomato, pickled red onion.</p>
+            </li>
           </ul>
         </div>
-        <div class="map-card" aria-label="Map placeholder">
-          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1500&auto=format&fit=crop" alt="Ambient photo of the bar interior" loading="lazy">
+      </section>
+
+      <!-- DRINKS -->
+      <section id="drinks" class="section section-alt">
+        <div class="container">
+          <header class="section-head">
+            <h2>Drinks</h2>
+            <p>Craft cocktails and local taps to match your mood.</p>
+          </header>
+
+          <div class="filters" role="tablist" aria-label="Drink categories">
+            <button class="chip is-active" data-filter="all" data-target="drinkGrid" role="tab" aria-selected="true">All</button>
+            <button class="chip" data-filter="cocktails" data-target="drinkGrid" role="tab" aria-selected="false">Cocktails</button>
+            <button class="chip" data-filter="beer" data-target="drinkGrid" role="tab" aria-selected="false">Beer</button>
+            <button class="chip" data-filter="noalcohol" data-target="drinkGrid" role="tab" aria-selected="false">Zero-Proof</button>
+          </div>
+
+          <ul class="menu-grid" id="drinkGrid">
+            <li class="menu-card" data-category="cocktails">
+              <div class="menu-card__head">
+                <h3>Smoked Old Fashioned</h3><span class="price">€10</span>
+              </div>
+              <p>Bourbon, demerara, bitters, orange — smoke finish.</p>
+              <span class="tag">Classic</span>
+            </li>
+
+            <li class="menu-card" data-category="cocktails">
+              <div class="menu-card__head">
+                <h3>Neon Paloma</h3><span class="price">€9</span>
+              </div>
+              <p>Tequila, grapefruit, lime, soda, pinch of salt.</p>
+              <span class="tag">Fresh</span>
+            </li>
+
+            <li class="menu-card" data-category="beer">
+              <div class="menu-card__head">
+                <h3>Local IPA (Tap)</h3><span class="price">€6</span>
+              </div>
+              <p>Rotating selection from local breweries.</p>
+            </li>
+
+            <li class="menu-card" data-category="noalcohol">
+              <div class="menu-card__head">
+                <h3>Charcoal Lemonade</h3><span class="price">€6</span>
+              </div>
+              <p>Lemon, agave, activated charcoal, soda.</p>
+              <span class="tag">Zero-Proof</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SPECIALS / SCROLLER -->
+      <section class="section specials">
+        <div class="container">
+          <header class="section-head">
+            <h2>Tonight’s Specials</h2>
+            <p>Limited run plates & bartender’s picks.</p>
+          </header>
+
+          <div class="cards-scroll" tabindex="0" aria-label="Specials carousel">
+            <article class="special-card">
+              <img src="https://images.unsplash.com/photo-1606756790138-261d4d2b69f1?q=80&w=1600&auto=format&fit=crop" alt="BBQ burger special" loading="lazy">
+              <div class="special-card__body">
+                <h3>BBQ Burnt-Ends Smash</h3>
+                <p>Double patty, house BBQ, crispy onions.</p>
+                <span class="price">€13</span>
+              </div>
+            </article>
+
+            <article class="special-card">
+              <img src="https://images.unsplash.com/photo-1541976076758-347942db1970?q=80&w=1600&auto=format&fit=crop" alt="Cocktail special" loading="lazy">
+              <div class="special-card__body">
+                <h3>Black Cherry Sour</h3>
+                <p>Whiskey, cherry, foam — weekend only.</p>
+                <span class="price">€9</span>
+              </div>
+            </article>
+
+            <article class="special-card">
+              <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?q=80&w=1600&auto=format&fit=crop" alt="Loaded fries special" loading="lazy">
+              <div class="special-card__body">
+                <h3>Korean Loaded Fries</h3>
+                <p>Gochujang mayo, scallions, sesame.</p>
+                <span class="price">€7</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EVENTS -->
+      <section id="events" class="section section-alt">
+        <div class="container">
+          <header class="section-head">
+            <h2>Events</h2>
+            <p>Live DJs every Friday. Quiz Night on Wednesdays.</p>
+          </header>
+
+          <ul class="events-grid">
+            <li class="event">
+              <time datetime="2025-08-15">Aug 15, 2025</time>
+              <h3>Summer DJ — House & Funk</h3>
+              <p>Beats from 21:00. 2-for-1 Palomas 20:00–21:00.</p>
+            </li>
+            <li class="event">
+              <time datetime="2025-08-20">Aug 20, 2025</time>
+              <h3>Quiz Night</h3>
+              <p>Teams up to 5. Starts 20:30. Prizes for top 3.</p>
+            </li>
+            <li class="event">
+              <time datetime="2025-08-24">Aug 24, 2025</time>
+              <h3>Wing Sunday</h3>
+              <p>€0.80 wings all day with any drink.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- BOOKING -->
+      <section id="book" class="section">
+        <div class="container book-wrap">
+          <header class="section-head">
+            <h2>Book a Table</h2>
+            <p>We hold tables for 15 minutes. For groups of 8+, call us.</p>
+          </header>
+
+          <form id="bookingForm" class="booking-form" novalidate>
+            <div class="form-row">
+              <label for="date">Date</label>
+              <input type="date" id="date" required>
+            </div>
+            <div class="form-row">
+              <label for="time">Time</label>
+              <input type="time" id="time" required>
+            </div>
+            <div class="form-row">
+              <label for="party">Party size</label>
+              <input type="number" id="party" min="1" max="20" value="2" required>
+            </div>
+            <div class="form-row">
+              <label for="name">Full name</label>
+              <input type="text" id="name" placeholder="Your name" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@email.com" required>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" placeholder="+39 333 123 4567" required>
+            </div>
+            <div class="form-row">
+              <label for="notes">Notes (optional)</label>
+              <textarea id="notes" rows="3" placeholder="Allergies, occasion, etc."></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Confirm reservation</button>
+              <p class="small">You’ll see on-screen confirmation and an email draft.</p>
+            </div>
+          </form>
+
+          <!-- Modal -->
+          <dialog id="confirmModal" class="modal">
+            <form method="dialog" class="modal-card">
+              <h3>Reservation Confirmed (Local)</h3>
+              <p id="confirmText">Thanks! We’ve saved your booking in this browser.</p>
+              <menu>
+                <button class="btn" value="cancel">Close</button>
+              </menu>
+            </form>
+          </dialog>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="section section-alt">
+        <div class="container">
+          <header class="section-head">
+            <h2>Gallery</h2>
+            <p>Vibes from the bar & kitchen.</p>
+          </header>
+          <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1600&auto=format&fit=crop" alt="Bar counter with lights" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=1600&auto=format&fit=crop" alt="Cocktail being poured" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1544027993-37dbfe43562a?q=80&w=1600&auto=format&fit=crop" alt="Burger stack" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1550639525-c97d455acf70?q=80&w=1600&auto=format&fit=crop" alt="Friends toasting" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=1600&auto=format&fit=crop" alt="Beer taps" loading="lazy">
+            <img src="https://images.unsplash.com/photo-1543775305-c60d67e1bf4e?q=80&w=1600&auto=format&fit=crop" alt="Fries and dips" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT / FOOTER -->
+      <section id="contact" class="section">
+        <div class="container contact-wrap">
+          <div>
+            <h2>Contact</h2>
+            <p class="lead">123 Ember St, Your City</p>
+            <ul class="contact-list">
+              <li><strong>Phone:</strong> <a href="tel:+39123456789">+39 123 456 789</a></li>
+              <li><strong>Email:</strong> <a href="mailto:hello@ember.bar">hello@ember.bar</a></li>
+              <li><strong>Hours:</strong> <span id="hoursText">Mon–Thu 12:00–00:00 · Fri–Sat 12:00–02:00 · Sun 12:00–23:00</span></li>
+            </ul>
+          </div>
+          <div class="map-card" aria-label="Map placeholder">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1500&auto=format&fit=crop" alt="Ambient photo of the bar interior" loading="lazy">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> EMBER. All rights reserved.</p>
+        <nav aria-label="Footer">
+          <a href="#menu">Menu</a>
+          <a href="#drinks">Drinks</a>
+          <a href="#events">Events</a>
+          <a href="#book">Book</a>
+        </nav>
+        <div class="socials" aria-label="Social media">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="TikTok">TT</a>
+          <a href="#" aria-label="Facebook">FB</a>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© <span id="year"></span> EMBER. All rights reserved.</p>
-      <nav aria-label="Footer">
-        <a href="#menu">Menu</a>
-        <a href="#drinks">Drinks</a>
-        <a href="#events">Events</a>
-        <a href="#book">Book</a>
-      </nav>
-      <div class="socials" aria-label="Social media">
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="#" aria-label="TikTok">TT</a>
-        <a href="#" aria-label="Facebook">FB</a>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

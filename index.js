@@ -22,8 +22,8 @@ const yearEl = $('#year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 /* ====== Open hours & status pill ======
-   Customize hours here (24h, local time):
-   0=Sun ... 6=Sat
+  Customize hours here (24h, local time):
+  0=Sun ... 6=Sat
 */
 const HOURS = {
   0: { open: "12:00", close: "23:00" }, // Sun

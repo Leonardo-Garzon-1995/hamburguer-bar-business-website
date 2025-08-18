@@ -13,9 +13,18 @@
   --shadow: 0 10px 30px rgba(0,0,0,.35);
 }
 
-*{box-sizing:border-box}
-html:focus-within{scroll-behavior:smooth}
-html,body{height:100%}
+*{
+  box-sizing:border-box
+}
+
+html:focus-within{
+  scroll-behavior:smooth
+}
+
+html,body{
+  height:100%
+}
+
 body{
   margin:0;
   font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
@@ -25,10 +34,21 @@ body{
 }
 
 /* ---------- Utilities ---------- */
-.container{width:min(1100px, 92%); margin-inline:auto}
+.container{
+  width:min(1100px, 92%); 
+  margin-inline:auto
+}
+
 .section{padding:72px 0}
-.section-alt{background:linear-gradient(180deg, var(--bg-alt), var(--bg));}
-.section-head{margin-bottom:28px}
+
+.section-alt{
+  background:linear-gradient(180deg, var(--bg-alt), var(--bg));
+}
+
+.section-head{
+  margin-bottom:28px
+}
+
 .section-head h2{
   margin:0 0 8px;
   font-family: Oswald, Inter, sans-serif;
@@ -44,13 +64,42 @@ body{
   backdrop-filter:saturate(1.2) blur(10px);
   border-bottom:1px solid #232733;
 }
-.header-inner{display:flex; align-items:center; justify-content:space-between; gap:16px; padding:12px 0}
-.brand{display:flex; align-items:center; gap:10px; text-decoration:none; color:var(--text)}
-.brand-mark{font-size:1.4rem}
-.brand-text{font-family:Oswald, Inter, sans-serif; font-weight:700; letter-spacing:1.5px}
 
-.site-nav ul{display:flex; align-items:center; gap:18px; list-style:none; margin:0; padding:0}
-.site-nav a{color:var(--text); text-decoration:none; opacity:.9}
+.header-inner{
+  display:flex; 
+  align-items:center; 
+  justify-content:space-between; 
+  gap:16px; 
+  padding:12px 0
+}
+
+.brand{
+  display:flex; 
+  align-items:center; 
+  gap:10px; 
+  text-decoration:none; 
+  color:var(--text)
+}
+
+.brand-mark{font-size:1.4rem}
+.brand-text{
+  font-family:Oswald, Inter, sans-serif; 
+  font-weight:700; 
+  letter-spacing:1.5px
+}
+
+.site-nav ul{display:flex; 
+  align-items:center; 
+  gap:18px; 
+  list-style:none; 
+  margin:0; 
+  padding:0
+}
+
+.site-nav a{
+  color:var(--text); 
+  text-decoration:none; 
+  opacity:.9}
 .site-nav a:hover{color:#fff}
 
 .status-pill{
@@ -64,34 +113,79 @@ body{
 
 /* Mobile nav */
 .nav-toggle{
-  display:none; width:42px; height:38px; border:0; background:transparent; cursor:pointer;
+  display:none; 
+  width:42px; 
+  height:38px; 
+  border:0; 
+  background:transparent; 
+  cursor:pointer;
 }
-.nav-toggle .bar{display:block; height:2px; background:#fff; margin:7px 6px; transition:.3s}
+
+.nav-toggle .bar{
+  display:block; 
+  height:2px; 
+  background:#fff; 
+  margin:7px 6px; 
+  transition:.3s
+}
 
 @media (max-width: 860px){
   .nav-toggle{display:block}
   .site-nav{
-    position:fixed; inset:60px 0 auto 0; background:#0f1319; border-bottom:1px solid #222a36;
-    transform:translateY(-130%); transition:transform .35s ease; padding:12px 0;
+    position:fixed; 
+    inset:60px 0 auto 0; 
+    background:#0f1319; 
+    border-bottom:1px solid #222a36;
+    transform:translateY(-130%); 
+    transition:transform .35s ease; 
+    padding:12px 0;
   }
   .site-nav.open{transform:translateY(0)}
-  .site-nav ul{flex-direction:column; align-items:flex-start; gap:10px; padding:10px 16px}
+  .site-nav ul{
+    flex-direction:column; 
+    align-items:flex-start; 
+    gap:10px; 
+    padding:10px 16px
+  }
 }
 
 /* ---------- Buttons / Chips ---------- */
 .btn{
-  display:inline-flex; align-items:center; justify-content:center;
-  padding:.85rem 1.1rem; border-radius:999px; text-decoration:none; border:1px solid #2a2f3b;
-  background: #1a1e26; color:#fff; font-weight:600; letter-spacing:.2px; box-shadow:var(--shadow);
+  display:inline-flex; 
+  align-items:center; 
+  justify-content:center;
+  padding:.85rem 1.1rem; 
+  border-radius:999px; 
+  text-decoration:none; 
+  border:1px solid #2a2f3b;
+  background: #1a1e26; 
+  color:#fff; 
+  font-weight:600; 
+  letter-spacing:.2px; 
+  box-shadow:var(--shadow);
 }
+
 .btn:hover{filter:brightness(1.08)}
-.btn-primary{background:linear-gradient(135deg, var(--accent), #ff7d3a); border-color:transparent}
-.btn-ghost{background:transparent; border:1px solid #2a2f3b}
+.btn-primary{
+  background:linear-gradient(135deg, var(--accent), #ff7d3a); 
+  border-color:transparent
+}
+
+.btn-ghost{
+  background:transparent; 
+  border:1px solid #2a2f3b
+}
 
 .chip{
-  background:#13171f; border:1px solid #252a36; padding:.55rem .9rem; border-radius:999px; color:#dfe3ee;
-  cursor:pointer; font-weight:600;
+  background:#13171f; 
+  border:1px solid #252a36; 
+  padding:.55rem .9rem; 
+  border-radius:999px; 
+  color:#dfe3ee;
+  cursor:pointer; 
+  font-weight:600;
 }
+
 .chip.is-active{outline:var(--ring); background:#171c26}
 
 /* ---------- Hero ---------- */
