@@ -17,6 +17,10 @@
   box-sizing:border-box
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html:focus-within{
   scroll-behavior:smooth
 }
@@ -173,7 +177,13 @@ body{
 
 .btn-ghost{
   background:transparent; 
-  border:1px solid #2a2f3b
+  border:1px solid #2a2f3b;
+  transition: 150ms ease-in
+}
+
+.btn-ghost:hover {
+  border:1px solid #ff7d3a;
+  color: #ff7d3a ;
 }
 
 .chip{
@@ -425,42 +435,138 @@ input:focus, textarea:focus{
 
 /* ---------- Gallery ---------- */
 .gallery{
-  display:grid; grid-template-columns:repeat(3, 1fr); gap:10px;
+  display:grid; 
+  grid-template-columns:repeat(3, 1fr); 
+  gap:10px;
 }
-@media (max-width: 860px){ .gallery{grid-template-columns:repeat(2,1fr)} }
-@media (max-width: 520px){ .gallery{grid-template-columns:1fr} }
-.gallery img{width:100%; height:240px; object-fit:cover; border-radius:10px; border:1px solid #292f3b}
+
+@media (max-width: 860px){ 
+  .gallery{grid-template-columns:repeat(2,1fr)} 
+}
+
+@media (max-width: 520px){ 
+  .gallery{
+    grid-template-columns:1fr
+  } 
+}
+
+.gallery img{
+  width:100%; 
+  height:240px; 
+  object-fit:cover; 
+  border-radius:10px; 
+  border:1px solid #292f3b
+}
 
 /* ---------- Contact ---------- */
 .contact-wrap{
-  display:grid; grid-template-columns: 1.2fr .8fr; gap:16px; align-items:start;
+  display:grid; 
+  grid-template-columns: 1.2fr .8fr; 
+  gap:16px; 
+  align-items:start;
 }
-@media (max-width: 860px){ .contact-wrap{grid-template-columns:1fr} }
-.lead{color:#d7dbe6; margin:.2rem 0}
-.contact-list{padding:0; margin:10px 0 0; list-style:none}
+
+@media (max-width: 860px){ 
+  .contact-wrap{
+    grid-template-columns:1fr
+  } 
+}
+
+.lead{
+  color:#d7dbe6; 
+  margin:.2rem 0
+}
+
+.contact-list{
+  padding:0; 
+  margin:10px 0 0; 
+  list-style:none
+}
+
 .contact-list a{color:#e9f7ff}
 
 /* Map / image card */
-.map-card{border-radius:var(--radius); overflow:hidden; border:1px solid #242a36; background:#0f1319}
-.map-card img{display:block; width:100%; height:100%; object-fit:cover}
+.map-card{
+  border-radius:var(--radius); 
+  overflow:hidden; 
+  border:1px solid #242a36; 
+  background:#0f1319
+}
+
+.map-card img{
+  display:block; 
+  width:100%; 
+  height:100%; 
+  object-fit:cover;
+}
+
 
 /* ---------- Footer ---------- */
-.site-footer{border-top:1px solid #202531; background:#0d1016; color:#c3c7d4}
-.footer-inner{display:flex; align-items:center; justify-content:space-between; gap:12px; padding:18px 0; flex-wrap:wrap}
-.site-footer nav a{color:#d8dbe6; margin-right:14px; text-decoration:none}
-.socials a{display:inline-flex; width:32px; height:32px; align-items:center; justify-content:center; background:#171c26; border:1px solid #23293a; border-radius:999px; margin-left:8px; color:#e4e7ef}
+.site-footer{
+  border-top:1px solid #202531; 
+  background:#0d1016; 
+  color:#c3c7d4
+}
+
+.footer-inner{
+  display:flex; 
+  align-items:center; 
+  justify-content:space-between; 
+  gap:12px; 
+  padding:18px 0; 
+  flex-wrap:wrap
+}
+
+.site-footer nav a{
+  color:#d8dbe6; 
+  margin-right:14px; 
+  text-decoration:none
+}
+
+.socials a{
+  display:inline-flex; 
+  width:32px; 
+  height:32px; 
+  align-items:center; 
+  justify-content:center; 
+  background:#171c26; 
+  border:1px solid #23293a; 
+  border-radius:999px; 
+  margin-left:8px; 
+  color:#e4e7ef;
+}
 
 /* ---------- Helpers ---------- */
 .hidden{display:none !important}
 
 /* ---------- Modal ---------- */
 .modal{
-  border:none; padding:0; background:transparent;
+  border:none; 
+  padding:0; 
+  background:transparent;
 }
+
 .modal::backdrop{background:rgba(0,0,0,.6)}
+
 .modal-card{
-  background:var(--card); color:var(--text); border:1px solid #2a2f3b; border-radius:16px; padding:18px; max-width:520px; width:min(92%, 520px);
-  margin:auto; box-shadow:var(--shadow);
+  background:var(--card); 
+  color:var(--text); 
+  border:1px solid #2a2f3b; 
+  border-radius:16px; 
+  padding:18px; 
+  max-width:520px; 
+  width:min(92%, 520px);
+  margin:auto; 
+  box-shadow:var(--shadow);
 }
-.modal-card h3{margin:.2rem 0 .6rem}
-.modal-card menu{display:flex; justify-content:flex-end; margin:0; padding-top:8px}
+
+.modal-card h3{
+  margin:.2rem 0 .6rem;
+}
+
+.modal-card menu{
+  display:flex; 
+  justify-content:flex-end; 
+  margin:0; 
+  padding-top:8px
+}
